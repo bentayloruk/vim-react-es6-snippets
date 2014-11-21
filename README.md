@@ -1,3 +1,6 @@
+**These snippets are not ready yet.**
+
+
 vim-react-es6-snippets
 ==================
 
