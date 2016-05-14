@@ -53,13 +53,9 @@ snippet pt
 		${1}: React.PropTypes.${2:string}
 	}
 snippet rcc
-	/**
-	 * @jsx React.DOM
-	 */
+	import React, { PropTypes, Component } from 'react'
 
-	var React = require('React');
-
-	class _${1:ClassName} {
+	class _${1:ClassName} extends Component {
 
 		render() {
 			return (
@@ -68,7 +64,11 @@ snippet rcc
 		}
 	};
 
-	module.exports = React.createClass(_$1}.prototype);
+	_$1.propTypes = {
+
+	}
+
+	default exports _$1
 snippet cc
 	class _${1:ClassName} {
 
