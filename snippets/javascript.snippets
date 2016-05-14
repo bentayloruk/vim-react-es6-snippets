@@ -60,9 +60,9 @@ snippet rcc
 		render() {
 			return (
 				${0:<div />}
-			);
+			)
 		}
-	};
+	}
 
 	_$1.propTypes = {
 
@@ -70,16 +70,16 @@ snippet rcc
 
 	export default _$1
 snippet cc
-	class _${1:ClassName} {
+	class _${1:ClassName} extends Component {
 
 		render() {
 			return (
 				${0:<div />}
-			);
+			)
 		}
-	};
+	}
 
-	export const $1 = React.createClass(_$1.prototype);
+	export const $1 = _$1
 snippet ren
 	render() {
 		return (
