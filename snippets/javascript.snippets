@@ -80,6 +80,30 @@ snippet cc
 	}
 
 	export const $1 = _$1
+snippet slc
+	const _${1:ClassName} = (props) => {
+		return (
+			${0:<div />}
+		)
+	}
+
+	_$1.propTypes = {
+
+	}
+snippet rslc
+	import React, { PropTypes } from 'react'
+
+	const _${1:ClassName} = (props) => {
+		return (
+			${0:<div />}
+		)
+	}
+
+	_$1.propTypes = {
+
+	}
+
+	export default _$1
 snippet ren
 	render() {
 		return (
